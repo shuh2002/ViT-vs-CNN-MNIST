@@ -6,7 +6,9 @@ Tackling the MNIST Handwriting Digit recognition problem.
 
 ## CNN
 Builds the VGG11 CNN using PyTorch with evaluation of data augmentation (random flips, noise).
+
 Results:
+
 <img width="717" alt="Screenshot 2024-07-11 at 4 00 11 PM" src="https://github.com/shuh2002/ViT-vs-CNN-MNIST/assets/40676497/190a9f8d-5f33-4b35-9ddc-137aab01eedd">
 
 - We can see that flipping our test images either horizontal or vertical reduces the accuracy to around 40 percent. Further, additional epochs of training don’t seem to increase the accuracy.
@@ -26,7 +28,7 @@ Note that we also augment our test set (no noise) with similar flippings.
    
 
 ## Vision Transformer
-Builds Self-Attention Transformer by linearly projecting patches into encoder. We leverage a Pre-LN Transformer for better gradient flow and efficency. Monitored using TensorBoard.
+Builds Vision Transformer by linearly projecting patches into encoder. We leverage a Pre-LN Transformer for better gradient flow and efficency. Monitored using TensorBoard.
 - Ended with a lower test Accuracy of 93.81%.
 - Training / Validation accuracy vs. epoch:
 <img width="808" alt="Screenshot 2024-07-11 at 4 04 22 PM" src="https://github.com/shuh2002/ViT-vs-CNN-MNIST/assets/40676497/99c5d3bb-376b-4144-9bc7-de5286339a8d">
