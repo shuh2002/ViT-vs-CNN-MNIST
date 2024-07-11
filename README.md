@@ -27,3 +27,6 @@ Note that we also augment our test set (no noise) with similar flippings.
 
 ## Vision Transformer
 Builds Self-Attention Transformer by linearly projecting patches into encoder. We leverage a Pre-LN Transformer for better gradient flow and efficency. Monitored using TensorBoard.
+- Ended with a lower test Accuracy of 93.81%.
+- Training / Validation accuracy vs. epoch:
+<img width="808" alt="Screenshot 2024-07-11 at 4 04 22 PM" src="https://github.com/shuh2002/ViT-vs-CNN-MNIST/assets/40676497/99c5d3bb-376b-4144-9bc7-de5286339a8d">
